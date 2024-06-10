@@ -41,3 +41,9 @@ var x = setInterval(function () {
 // var audio = document.getElementById("audio");
 
 // audio.play();
+AOS.init({
+  offset: 200,
+  duration: 600,
+  easing: "ease-in-out",
+  delay: 0,
+});
