@@ -26,21 +26,42 @@ var x = setInterval(function () {
 // Music
 // const audio = document.getElementById("myAudio");
 // const playButton = document.getElementById("playButton");
+// const isAutoplayAllowed = audio.canPlayType("audio/mpeg"); // Check if audio can be played
 
 // playButton.addEventListener("click", () => {
-//   if (audio.paused) {
-//     audio.play();
-//     playButton.textContent = "Jeda";
+//   if (isAutoplayAllowed) {
+//     audio.muted = true; // Mute the audio initially
+//     audio.play(); // Start playback
+//     audio.muted = false; // Unmute after a short delay (optional)
 //   } else {
-//     audio.pause();
-//     playButton.textContent = "Putar";
+//     alert("This browser may not allow autoplay. Click the button to play manually.");
 //   }
 // });
 
-// Auto play music
-// var audio = document.getElementById("audio");
+// // Optional: Handle potential autoplay restrictions in modern browsers
+// audio.addEventListener("canplaythrough", () => {
+//   // If autoplay is allowed, uncomment the following line:
+//   audio.muted = true;
+//   audio.play();
+// });
 
-// audio.play();
-const music = document.getElementById("music");
+const audio = document.getElementById("myAudio");
+const playButton = document.getElementById("playButton");
+const isAutoplayAllowed = audio.canPlayType("audio/mpeg"); // Check if audio can be played
 
-music.play();
+playButton.addEventListener("click", () => {
+  if (audio.paused) {
+    audio.play();
+    // playButton.textContent = "Jeda";
+  } else {
+    audio.pause();
+    // playButton.textContent = "Putar";
+  }
+});
+
+// Optional: Handle potential autoplay restrictions in modern browsers
+audio.addEventListener("canplaythrough", () => {
+  // If autoplay is allowed, uncomment the following line:
+  audio.muted = true;
+  audio.play();
+});

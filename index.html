@@ -25,10 +25,10 @@
       href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
-    <audio
+    <!-- <audio
       id="music"
       src="intro.mp3"
-      type="audio/mp3"></audio>
+      type="audio/mp3"></audio> -->
     <!-- Hero -->
     <section
       class="min-h-screen w-full bg-cover bg-blend-overlay bg-[#726b66] bg-center text-secondary"
@@ -56,6 +56,20 @@
             ERVAN
           </h1>
           <h2 class="font-forum font-light text-white text-lg">Minggu, 30 Juni 2024</h2>
+          <audio id="myAudio">
+            <source
+              src="music.mp3"
+              type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+          <button
+            id="playButton"
+            class="mt-10">
+            <img
+              class="size-16"
+              src="./images/play-button.png"
+              alt="" />
+          </button>
         </div>
       </div>
     </section>
@@ -85,7 +99,7 @@
                 data-aos-anchor-placement="top-center">
                 <div class="max-w-2xl p-5 rounded-lg">
                   <div class="flex flex-col items-center mb-10">
-                    <p class="font-forum text-5xl text-primary">Celebrate Our Love</p>
+                    <p class="font-forum text-4xl text-primary">Celebrate Our Love</p>
                     <h1 class="text-lg font-garamond text-primary">Sunday, 30 June 2024</h1>
                   </div>
                   <div class="flex gap-5 md:gap-10 justify-center">
@@ -575,7 +589,7 @@
               </div>
               <!-- Terimakasih -->
               <div class="my-20 text-primary font-forum text-center">
-                <h1 class="text-5xl mb-2">Terimakasih</h1>
+                <h1 class="text-5xl mb-2">Terima Kasih</h1>
                 <p>Merupakan suatu kebahagiaan dan kehormatan bagi kami, apabila Bapak/Ibu/Saudara/i, berkenan hadir dan memberikan do’a restu kepada kami.</p>
               </div>
               <div class="flex justify-center">
