@@ -24,15 +24,20 @@ var x = setInterval(function () {
 }, 1000);
 
 // Music
-const audio = document.getElementById("myAudio");
-const playButton = document.getElementById("playButton");
+// const audio = document.getElementById("myAudio");
+// const playButton = document.getElementById("playButton");
 
-playButton.addEventListener("click", () => {
-  if (audio.paused) {
-    audio.play();
-    playButton.textContent = "Jeda";
-  } else {
-    audio.pause();
-    playButton.textContent = "Putar";
-  }
-});
+// playButton.addEventListener("click", () => {
+//   if (audio.paused) {
+//     audio.play();
+//     playButton.textContent = "Jeda";
+//   } else {
+//     audio.pause();
+//     playButton.textContent = "Putar";
+//   }
+// });
+
+// Auto play music
+// var audio = document.getElementById("audio");
+
+// audio.play();
