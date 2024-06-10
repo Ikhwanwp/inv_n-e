@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Wedding N&E</title>
+    <link
+      href="./css/style.css"
+      rel="stylesheet" />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Forum&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Hero -->
+    <section
+      class="min-h-screen w-full bg-cover bg-blend-overlay bg-[#726b66] bg-center text-secondary"
+      style="background-image: url('./images/1.1.JPG')">
+      <div class="container py-10 text-center">
+        <h2 class="font-forum font-bold text-white text-7xl">N&E</h2>
+        <div class="sm:mt-36 mt-20 text-center">
+          <h2 class="font-forum text-white text-2xl sm:text-5xl">The Wedding of</h2>
+          <h1 class="font-forum text-white font-bold text-7xl sm:text-9xl my-4">
+            Nofi <br class="sm:hidden" />& <br class="sm:hidden" />
+            Ervan
+          </h1>
+          <h2 class="font-forum font-light text-white text-lg">Minggu, 30 Juni 2024</h2>
+        </div>
+        <audio
+          id="myAudio"
+          src="./music/intro.mp3"
+          autoplay>
+          Your browser does not support the audio tag.
+        </audio>
+        <!-- <button
+          id="playButton"
+          class="bg-white p-4 rounded-2xl mt-10">
+          Pause
+        </button> -->
+      </div>
+    </section>
+    <!-- End Hero -->
+
+    <!-- Profile and Countdown -->
+    <section class="min-h-screen w-full bg-secondary">
+      <div
+        class="bg-no-repeat bg-[size:50%] md:bg-[size:20%]"
+        style="background-image: url('./images/flower-1.png')">
+        <div
+          class="flower-1 bg-no-repeat bg-[size:50%] md:bg-[size:20%] bg-[right_top_35rem] md:bg-right"
+          style="background-image: url('./images/flower-2.png')">
+          <div
+            class="flower-1 bg-no-repeat bg-[size:50%] md:bg-[size:20%] bg-[left_bottom_20rem] md:bg-left-bottom"
+            style="background-image: url('./images/flower-1.png')">
+            <div class="container py-10 grid grid-cols-1 md:grid-cols-3 gap-10">
+              <!-- Countdown Card -->
+              <div class="md:col-span-3 flex justify-center">
+                <div class="max-w-2xl p-5 rounded-lg">
+                  <div class="flex flex-col items-center mb-10">
+                    <p class="font-forum text-4xl font-parisienne text-primary">Celebrate Our Love</p>
+                    <h1 class="text-lg font-garamond text-primary">Sunday, 30 June 2024</h1>
+                  </div>
+                  <div class="flex gap-5 md:gap-10 justify-center">
+                    <div class="bg-primary p-5 rounded-md">
+                      <p
+                        id="days"
+                        class="text-3xl font-bold font-garamond text-secondary">
+                        00
+                      </p>
+                      <span class="font-garamond text-secondary text-xs">Hari</span>
+                    </div>
+                    <div class="bg-primary p-5 rounded-md">
+                      <p
+                        id="hours"
+                        class="text-3xl font-bold font-garamond text-secondary">
+                        00
+                      </p>
+                      <span class="font-garamond text-secondary text-xs">Jam</span>
+                    </div>
+                    <div class="bg-primary p-5 rounded-md">
+                      <p
+                        id="minutes"
+                        class="text-3xl font-bold font-garamond text-secondary">
+                        00
+                      </p>
+                      <span class="font-garamond text-secondary text-xs">Menit</span>
+                    </div>
+                    <div class="bg-primary p-5 rounded-md">
+                      <p
+                        id="seconds"
+                        class="text-3xl font-bold font-garamond text-secondary">
+                        00
+                      </p>
+                      <span class="font-garamond text-secondary text-xs">Detik</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Woman Card -->
+              <div class="h-auto w-full flex items-center md:flex-col">
+                <div class="text-center">
+                  <h1 class="font-garamond font-bold text-primary text-2xl mb-2">BRIDE</h1>
+                  <img
+                    class="w-60 sm:w-64"
+                    src="./images/bride.png"
+                    alt="" />
+                </div>
+                <div class="p-4 text-center w-full text-primary font-garamond md:p-2">
+                  <h3 class="text-lg font-bold font-bold">Nofi Maharani Dewi</h3>
+                  <p class="mt-1 font-medium">Putri dari <br />Bapak Engkos & Ibu Rasih</p>
+                </div>
+              </div>
+              <!-- And -->
+              <span class="text-9xl font-forum text-center text-primary md:self-center">&</span>
+              <!-- Man Card -->
+              <div class="h-auto w-full flex items-center md:flex-col md:flex-col-reverse">
+                <div class="p-4 text-center w-full text-primary font-garamond md:p-2">
+                  <h3 class="text-lg font-bold font-bold">Ervan Irawan</h3>
+                  <p class="mt-1 font-medium">Putra dari <br />Bapak Endang sutisna & Ibu Heni</p>
+                </div>
+                <div class="text-center">
+                  <h1 class="font-garamond font-bold text-primary text-2xl mb-2">GROOM</h1>
+                  <img
+                    class="w-60 sm:w-64"
+                    src="./images/groom.png"
+                    alt="" />
+                </div>
+              </div>
+            </div>
+            <!-- Location -->
+            <div class="container py-10 text-center">
+              <h1 class="text-3xl font-bold font-forum text-primary mb-10">WHEN & WHERE</h1>
+              <div class="flex flex-col gap-4 md:flex-row md:justify-around">
+                <!-- Akad -->
+                <div class="">
+                  <h2 class="font-garamond font-bold text-primary text-xl">AKAD</h2>
+                  <p class="font-garamond text-primary">Sunday, 30 June 2024</p>
+                  <p class="font-garamond text-primary">09.00 WIB</p>
+                </div>
+                <!-- Resepsi -->
+                <div>
+                  <h2 class="font-garamond font-bold text-primary text-xl">RESEPSI</h2>
+                  <p class="font-garamond text-primary">Sunday, 30 June 2024</p>
+                  <p class="font-garamond text-primary">10.00 WIB</p>
+                </div>
+                <!-- Alamat -->
+                <div>
+                  <h2 class="font-garamond font-bold text-primary text-xl">ALAMAT</h2>
+                  <p class="font-garamond text-primary">Tanjungrasakidul, <br />Ciawi RT.005/RW.002</p>
+                </div>
+              </div>
+              <!-- Gmaps -->
+              <div class="w-full h-auto flex justify-center items-center mt-10">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.024869212962!2d107.5393385!3d-6.390792500000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e696df00ca8fdab%3A0x8b6b82eebbac5ecd!2sRaihan%20cell!5e0!3m2!1sid!2sid!4v1715937070863!5m2!1sid!2sid"
+                  width="400"
+                  height="300"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Profile and Countdown -->
+
+    <!-- Quotes -->
+    <!-- End Quotes -->
+
+    <!-- Love Story -->
+    <section
+      class="min-h-screen w-full bg-cover bg-blend-overlay bg-[#e4dcd7] bg-center text-secondary"
+      style="background-image: url('./images/IMG_0871.JPG')">
+      <div class="container py-10">
+        <div class="">
+          <h1 class="text-5xl font-forum text-primary text-center">LOVE STORY</h1>
+        </div>
+        <!-- Content -->
+        <div class="">
+          <!-- 1 -->
+          <div class="flex items-center flex-col">
+            <div class="h-5 w-5 rounded-full bg-primary flex justify-center items-center">
+              <div class="h-3 w-3 rounded-full bg-secondary"></div>
+            </div>
+            <h2 class="text-primary my-4">Maret 2023 | <span class="font-bold">Pertemuan</span></h2>
+            <p class="text-primary">Pertama kali kami bertemu dan dikenalkan melalui teman dan kebetulan kami masih memiliki cerita masing-masing. Kedekatan dengan teman-teman kami membuat kami makin sering bertukar cerita satu sama lain dan membuat kami merasa cukup dekat sebagai sahabat yang dapat dipercaya. Namun takdir membuat kami saling berkomunikasi dan bertukar keluh kesah kami masing-masing.</p>
+          </div>
+          <!-- 2 -->
+          <div class="mt-4 flex items-center flex-col">
+            <div class="h-10 w-[2px] bg-primary"></div>
+            <div class="h-5 w-5 rounded-full bg-primary flex justify-center items-center">
+              <div class="h-3 w-3 rounded-full bg-secondary"></div>
+            </div>
+            <h2 class="text-primary my-4">April 2023 | <span class="font-bold">Kecocokan</span></h2>
+            <p class="text-primary">Karena begitu dekatnya, kami saling merasa cocok satu sama lain. Maka kami beranikan untuk mengungkapkan perasaan kami setelah 2 bulan perkenalan.</p>
+          </div>
+          <!-- 3 -->
+          <div class="mt-4 flex items-center flex-col">
+            <div class="h-10 w-[2px] bg-primary"></div>
+            <div class="h-5 w-5 rounded-full bg-primary flex justify-center items-center">
+              <div class="h-3 w-3 rounded-full bg-secondary"></div>
+            </div>
+            <h2 class="text-primary my-4">Mei 2023 | <span class="font-bold">Pengujian</span></h2>
+            <p class="text-primary">Hari-hari kami lewati bukan tanpa cobaan, terlebih predikat kami yang awalnya “tidak kenal sama sekali” tak dapat diterima oleh beberapa orang. Tapi kami terus menjalankan hubungan kami dengan sepenuh hati</p>
+          </div>
+          <!-- 4 -->
+          <div class="mt-4 flex items-center flex-col">
+            <div class="h-10 w-[2px] bg-primary"></div>
+            <div class="h-5 w-5 rounded-full bg-primary flex justify-center items-center">
+              <div class="h-3 w-3 rounded-full bg-secondary"></div>
+            </div>
+            <h2 class="text-primary my-4">Juli 2023 | <span class="font-bold">Keyakinan</span></h2>
+            <p class="text-primary">Setelah beberapa bulan kami saling kenal, semakin membuat kami yakin satu sama lain untuk melangkah lebih jauh. Sehingga kami yakinkan diri sampai di tahap pelamaran</p>
+          </div>
+          <!-- 5 -->
+          <div class="mt-4 pb-4 flex items-center flex-col">
+            <div class="h-10 w-[2px] bg-primary"></div>
+            <div class="h-5 w-5 rounded-full bg-primary flex justify-center items-center">
+              <div class="h-3 w-3 rounded-full bg-secondary"></div>
+            </div>
+            <h2 class="text-primary my-4">Juni 2023 | <span class="font-bold">Akhir & Awal</span></h2>
+            <p class="text-primary">Akhir dari perjalanan pencarian kami masing-masing sampailah pada tahap kami untuk memulai awal cerita kami bersama sebagai keluarga yang In Syaa Allah kami yakin untuk membangunnya bersama. Semoga langkah kami selalu diberkahi dan diridhakan oleh Allah SWT</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Love Story -->
+
+    <!-- Gallery -->
+    <section class="min-h-screen w-full bg-secondary">
+      <div class="container py-10">
+        <h1 class="text-5xl font-forum text-primary text-center mb-10">Gallery</h1>
+        <div class="grid gap-4 justify-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
+          <div
+            class="h-80 aspect-square bg-primary rounded-lg bg-cover bg-center"
+            style="background-image: url('./images/IMG_0861.JPG')"></div>
+          <div
+            class="h-80 aspect-square bg-primary rounded-lg bg-cover bg-center"
+            style="background-image: url('./images/IMG_0866.JPG')"></div>
+          <div
+            class="h-80 aspect-square bg-primary rounded-lg bg-cover bg-center"
+            style="background-image: url('./images/IMG_0857.JPG')"></div>
+          <div
+            class="h-80 aspect-square bg-primary rounded-lg bg-cover bg-top"
+            style="background-image: url('./images/IMG_0862.JPG')"></div>
+          <div
+            class="h-80 aspect-square bg-primary rounded-lg bg-cover bg-center"
+            style="background-image: url('./images/4.JPG')"></div>
+          <div
+            class="h-80 aspect-square bg-primary rounded-lg bg-cover bg-center"
+            style="background-image: url('./images/IMG_0871.JPG')"></div>
+        </div>
+      </div>
+    </section>
+    <!-- End Gallery -->
+
+    <!-- Footer -->
+    <section class="min-h-screen w-full bg-secondary">
+      <div
+        class="bg-no-repeat bg-[size:50%] md:bg-[size:20%]"
+        style="background-image: url('./images/flower-1.png')">
+        <div
+          class="bg-no-repeat bg-[size:50%] md:bg-[size:20%] bg-[right_top_35rem] md:bg-[right_top_20rem]"
+          style="background-image: url('./images/flower-2.png')">
+          <div
+            class="bg-no-repeat bg-[size:50%] md:bg-[size:20%] bg-[left_bottom_20rem] md:bg-[left_bottom_40rem]"
+            style="background-image: url('./images/flower-1.png')">
+            <div class="container py-10">
+              <!-- Wedding Gift -->
+              <div>
+                <h1 class="text-5xl font-forum text-primary text-center mb-10">Wedding Gift</h1>
+                <div class="grid gap-2 grid-cols-1 lg:gap-x-10 lg:gap-y-5 lg:grid-cols-3">
+                  <!-- Dana 1 -->
+                  <div class="border-2 rounded-xl border-primary p-4 bg-[#F4E4D5] w-full container">
+                    <img
+                      class="h-5 object-cover mb-4"
+                      src="./images/dana.png"
+                      alt="" />
+                    <div class="flex flex-col items-center gap-2">
+                      <p class="text-primary text-lg font-bold">a.n Nofi Maharani Dewi</p>
+                      <button class="bg-primary w-1/2 rounded-full text-white py-1 hover:bg-[#3A2617]">Kirim Dana</button>
+                    </div>
+                  </div>
+                  <!-- Dana 2 -->
+                  <div class="border-2 rounded-xl border-primary p-4 bg-[#F4E4D5] w-full container">
+                    <img
+                      class="h-5 object-cover mb-4"
+                      src="./images/dana.png"
+                      alt="" />
+                    <div class="flex flex-col items-center gap-2">
+                      <p class="text-primary text-lg font-bold">a.n Ervan Irawan</p>
+                      <button class="bg-primary w-1/2 rounded-full text-white py-1 hover:bg-[#3A2617]">Kirim Dana</button>
+                    </div>
+                  </div>
+                  <!-- Mandiri -->
+                  <div class="border-2 rounded-xl border-primary p-4 bg-[#F4E4D5] w-full container">
+                    <img
+                      class="h-5 object-cover mb-4"
+                      src="./images/mandiri.png"
+                      alt="" />
+                    <div class="flex flex-col items-center gap-2">
+                      <p class="text-primary text-lg font-bold">a.n Ervan Irawan</p>
+                      <button class="bg-primary w-1/2 rounded-full text-white py-1 hover:bg-[#3A2617]">Kirim Dana</button>
+                    </div>
+                  </div>
+                  <!-- Gift -->
+                  <div class="lg:col-start-2 border-2 rounded-xl border-primary p-4 bg-[#F4E4D5] w-full container">
+                    <div class="flex flex-col items-center gap-2">
+                      <p class="text-primary text-lg font-bold">Kirim Hadiah</p>
+                      <img
+                        class="h-20 object-cover my-2"
+                        src="./images/Gift.png"
+                        alt="" />
+                      <p class="text-primary text-lg text-center">
+                        Penerima: <br />
+                        <span class="font-bold"> Nofi Maharani Dewi </span>
+                      </p>
+                      <button class="bg-primary w-1/2 rounded-full text-white py-1 hover:bg-[#3A2617]">Alamat</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Ucapan dan Doa -->
+              <div class="my-10">
+                <h1 class="text-5xl font-forum text-primary text-center mb-10">Ucapan dan Doa</h1>
+                <div class="h-64 w-full bg-[#F4E4D5] rounded-xl flex flex-col items-center gap-2 border-2 border-primary">
+                  <img
+                    src="./images/Quote.png"
+                    alt="" />
+                  <button class="px-4 py-2 w-3/4 bg-primary rounded-full text-white hover:bg-[#3A2617]">
+                    Whatsapp <br />
+                    <span class="font-bold">Nofi Maharani Dewi</span>
+                  </button>
+                  <button class="px-4 py-2 w-3/4 bg-primary rounded-full text-white hover:bg-[#3A2617]">
+                    Whatsapp <br />
+                    <span class="font-bold">Nofi Maharani Dewi</span>
+                  </button>
+                </div>
+              </div>
+              <!-- Terimakasih -->
+              <div class="my-20 text-primary font-forum text-center">
+                <h1 class="text-5xl mb-2">Terimakasih</h1>
+                <p>Merupakan suatu kebahagiaan dan kehormatan bagi kami, apabila Bapak/Ibu/Saudara/i, berkenan hadir dan memberikan do’a restu kepada kami.</p>
+              </div>
+              <div class="flex justify-center">
+                <img
+                  src="./images/Logo.png"
+                  alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Footer -->
+
+    <script
+      type="module"
+      src="/public/js/app.js"></script>
+  </body>
+</html>
